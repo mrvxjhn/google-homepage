@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-    <head></head>
+    <html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Google</title>
+    </head>
     <body>
         <header>
-            <a href="">About</a>
-            <a href="">Store</a>
-            <a href="">Gmail</a>
-            <a href="">Images</a>
-            <button type="button">Apps Drawer</button>
-            <button type="button">Sign In</button>
+            <ul>
+                
+                <li style="float:left"><a href="#">About</a></li>
+                <li style="float:left"><a href="#">Store</a></li>
+                <li style="float:right"><a id="login-button" href="#">Sign In</a></li>
+                <li style="float:right"><a id="g-apps" href="#" title="Google Apps"><img src="img/appIcon.png" alt="" width="25" height="25"></a></li>
+                <li style="float:right"><a href="#">Images</a></li>
+                <li style="float:right"><a href="#">Gmail</a></li>
+                     
+            </ul>
         </header>
-        <div>
-            <img src="img/googleLogo.png" alt="">
+
+        <div class="logo">
+            <img  src="img/googleLogo.png" alt="">
         </div>
-        <div>
-            <input type="text">
+
+        <div class="searchBox">
+            <p id="search-img"></p>
+            <input id="search-input" type="text" title="Search">
         </div>
-        <div>
-            <button type="button">Google Search</button>
+        <button type="button">Google Search</button>
             <button type="button">I'm Feeling Lucky</button>
-        </div>
         <footer>
             <a href="">Advertising</a>
             <a href="">Business</a>
